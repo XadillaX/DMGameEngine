@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DMGECore", "DMGECore\DMGECore.vcxproj", "{9633E0D7-0141-4B50-9CD4-E29625CA97B5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DMGETest", "DMGETest\DMGETest.vcxproj", "{968DC1F0-DCC9-4842-92E4-D1CD1D3062E3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9633E0D7-0141-4B50-9CD4-E29625CA97B5} = {9633E0D7-0141-4B50-9CD4-E29625CA97B5}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9633E0D7-0141-4B50-9CD4-E29625CA97B5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9633E0D7-0141-4B50-9CD4-E29625CA97B5}.Debug|Win32.Build.0 = Debug|Win32
+		{9633E0D7-0141-4B50-9CD4-E29625CA97B5}.Release|Win32.ActiveCfg = Release|Win32
+		{9633E0D7-0141-4B50-9CD4-E29625CA97B5}.Release|Win32.Build.0 = Release|Win32
+		{968DC1F0-DCC9-4842-92E4-D1CD1D3062E3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{968DC1F0-DCC9-4842-92E4-D1CD1D3062E3}.Debug|Win32.Build.0 = Debug|Win32
+		{968DC1F0-DCC9-4842-92E4-D1CD1D3062E3}.Release|Win32.ActiveCfg = Release|Win32
+		{968DC1F0-DCC9-4842-92E4-D1CD1D3062E3}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

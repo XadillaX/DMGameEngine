@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SysGen">
+      <UniqueIdentifier>{2c339c7e-666d-468c-99f0-338c4fee51ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{612ef17a-d411-4b83-9cb5-6b8105ed0feb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module">
+      <UniqueIdentifier>{581b62c9-e317-441e-90db-f0623d1e58eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\HGE">
+      <UniqueIdentifier>{84c3e83f-feec-469b-b8ed-708e6628c834}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\HGE\include">
+      <UniqueIdentifier>{49016eef-1e96-4419-9f78-772d79c0b609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\HGE\src">
+      <UniqueIdentifier>{019e14a6-cae2-459b-9118-9cccb6ef6135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module\DesignPattern">
+      <UniqueIdentifier>{c99bb7e0-3c47-41c3-8d32-4810d79a394a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Worker">
+      <UniqueIdentifier>{158a22d1-7fe3-4daf-9065-91663592cffe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>SysGen</Filter>
+    </ClInclude>
+    <ClInclude Include="dmobject.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\include\hgerect.h">
+      <Filter>Module\HGE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\include\hgeresource.h">
+      <Filter>Module\HGE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\include\hgesprite.h">
+      <Filter>Module\HGE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\include\hgestrings.h">
+      <Filter>Module\HGE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\include\hgevector.h">
+      <Filter>Module\HGE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\include\hge.h">
+      <Filter>Module\HGE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\include\hgeanim.h">
+      <Filter>Module\HGE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\include\hgecolor.h">
+      <Filter>Module\HGE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\include\hgedistort.h">
+      <Filter>Module\HGE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\include\hgefont.h">
+      <Filter>Module\HGE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\include\hgegui.h">
+      <Filter>Module\HGE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\include\hgeguictrls.h">
+      <Filter>Module\HGE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\include\hgeparticle.h">
+      <Filter>Module\HGE\include</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\helpers\parser.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\helpers\resources.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\core\BASS\bass.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\core\hge_impl.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\core\ZLIB\crc32.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\core\ZLIB\crypt.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\core\ZLIB\deflate.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\core\ZLIB\inffast.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\core\ZLIB\inffixed.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\core\ZLIB\inflate.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\core\ZLIB\inftrees.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\core\ZLIB\ioapi.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\core\ZLIB\trees.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\core\ZLIB\unzip.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\core\ZLIB\zconf.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\core\ZLIB\zconf.in.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\core\ZLIB\zip.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\core\ZLIB\zlib.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="module\hge\src\core\ZLIB\zutil.h">
+      <Filter>Module\HGE\src</Filter>
+    </ClInclude>
+    <ClInclude Include="dmglobal.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="DMBaseHelper.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="globalmacro.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="dmsystemconfiguration.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="dmapplication.h" />
+    <ClInclude Include="dmsingleton.h">
+      <Filter>Module\DesignPattern</Filter>
+    </ClInclude>
+    <ClInclude Include="dmrenderworker.h">
+      <Filter>Worker</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>SysGen</Filter>
+    </ClCompile>
+    <ClCompile Include="dmobject.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\helpers\hgeanim.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\helpers\hgecolor.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\helpers\hgedistort.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\helpers\hgefont.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\helpers\hgegui.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\helpers\hgeguictrls.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\helpers\hgeparticle.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\helpers\hgepmanager.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\helpers\hgerect.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\helpers\hgeresource.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\helpers\hgesprite.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\helpers\hgestrings.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\helpers\hgevector.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\helpers\parser.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\helpers\resources.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\demo.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\graphics.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\ini.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\input.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\power.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\random.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\resource.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\sound.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\system.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\timer.cpp">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\ZLIB\adler32.c">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\ZLIB\crc32.c">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\ZLIB\inffast.c">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\ZLIB\inflate.c">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\ZLIB\inftrees.c">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\ZLIB\ioapi.c">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\ZLIB\trees.c">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\ZLIB\uncompr.c">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\ZLIB\unzip.c">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="module\hge\src\core\ZLIB\zutil.c">
+      <Filter>Module\HGE\src</Filter>
+    </ClCompile>
+    <ClCompile Include="dmglobal.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="DMBaseHelper.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="dmsystemconfiguration.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="dmapplication.cpp" />
+    <ClCompile Include="dmrenderworker.cpp">
+      <Filter>Worker</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="module\hge\src\core\hge.def">
+      <Filter>Module\HGE\src</Filter>
+    </None>
+  </ItemGroup>
+</Project>
