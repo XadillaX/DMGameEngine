@@ -8,6 +8,7 @@
 #ifndef __DMGLOBAL_H__
 #define __DMGLOBAL_H__
 #pragma once
+#include <windows.h>
 #include "globalmacro.h"
 #include "dmbasehelper.h"
 
