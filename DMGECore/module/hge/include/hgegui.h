@@ -26,7 +26,7 @@ class hgeGUI;
 /*
 ** hgeGUIObject
 */
-class hgeGUIObject
+class EXPORT hgeGUIObject
 {
 public:
 	hgeGUIObject()	{ hge=hgeCreate(HGE_VERSION); color=0xFFFFFFFF; }
@@ -62,8 +62,8 @@ public:
 	hgeGUIObject	*prev;
 
 protected:
-	hgeGUIObject(const hgeGUIObject &go);
-	hgeGUIObject&	operator= (const hgeGUIObject &go);
+    hgeGUIObject(const hgeGUIObject &go){}
+    hgeGUIObject&	operator= (const hgeGUIObject &go){ return *this; }
 
 	static HGE		*hge;
 };
@@ -72,7 +72,7 @@ protected:
 /*
 ** hgeGUI
 */
-class hgeGUI
+class EXPORT hgeGUI
 {
 public:
 	hgeGUI();

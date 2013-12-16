@@ -82,7 +82,7 @@ struct hgeParticleSystemInfo
 	float		fAlphaVar;
 };
 
-class hgeParticleSystem
+class EXPORT hgeParticleSystem
 {
 public:
 	hgeParticleSystemInfo info;
@@ -132,7 +132,7 @@ private:
 	hgeParticle			particles[MAX_PARTICLES];
 };
 
-class hgeParticleManager
+class EXPORT hgeParticleManager
 {
 public:
 	hgeParticleManager();

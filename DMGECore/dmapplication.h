@@ -7,11 +7,11 @@
  */
 #ifndef __DMAPPLICATION_H__
 #define __DMAPPLICATION_H__
-
 #pragma once
 #include "dmobject.h"
 #include "dmsingleton.h"
 #include "dmbasehelper.h"
+#include "dmscenemanager.h"
 #include "dmsystemconfiguration.h"
 
 class DMGECORE_API DMApplication : public DMObject, public DMSingleton<DMApplication>

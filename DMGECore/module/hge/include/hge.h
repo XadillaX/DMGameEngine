@@ -13,10 +13,12 @@
 
 #define HGE_VERSION 0x180
 
+#ifndef EXPORT
 #ifdef DMGECORE_EXPORTS
 #define EXPORT  __declspec(dllexport)
 #else
-#define EXPORT
+#define EXPORT  __declspec(dllimport)
+#endif
 #endif
 
 #define CALL  __stdcall

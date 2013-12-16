@@ -28,7 +28,7 @@
 /*
 ** HGE Font class
 */
-class hgeFont
+class EXPORT hgeFont
 {
 public:
 	hgeFont(const char *filename, bool bMipmap=false);

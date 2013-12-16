@@ -4,7 +4,7 @@
  * @author  XadillaX
  * @version 1.0 
  * @date    2013.12.15 
- */ 
+ */
 #ifndef __DMGLOBAL_H__
 #define __DMGLOBAL_H__
 #pragma once

@@ -6,14 +6,15 @@
  * @date    2013.12.15 
  */
 #include "dmrenderworker.h"
+#include "dmscenemanager.h"
 #include "module\hge\include\hge.h"
 
 bool _DMRenderWorker::_DMRenderRender()
 {
-    return false;
+    return DMSCENE.Render();
 }
 
 bool _DMRenderWorker::_DMRenderUpdate()
 {
-    return false;
+    return DMSCENE.Update();
 }

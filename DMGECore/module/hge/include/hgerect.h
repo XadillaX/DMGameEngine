@@ -10,8 +10,15 @@
 #ifndef HGERECT_H
 #define HGERECT_H
 
+#ifndef EXPORT
+#ifdef DMGECORE_EXPORTS
+#define EXPORT  __declspec(dllexport)
+#else
+#define EXPORT  __declspec(dllimport)
+#endif
+#endif
 
-class hgeRect
+class EXPORT hgeRect
 {
 public:
 	float	x1, y1, x2, y2;

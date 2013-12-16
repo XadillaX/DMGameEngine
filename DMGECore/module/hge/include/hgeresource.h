@@ -26,7 +26,7 @@
 
 class hgeResourceManager;
 
-struct ResDesc
+struct EXPORT ResDesc
 {
 	char		name[MAXRESCHARS];
 	int			resgroup;
@@ -46,7 +46,7 @@ protected:
 /*
 ** HGE Resource manager class
 */
-class hgeResourceManager
+class EXPORT hgeResourceManager
 {
 public:
 	hgeResourceManager(const char *scriptname=0);

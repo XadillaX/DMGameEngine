@@ -93,10 +93,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="dmapplication.h" />
-    <ClInclude Include="DMBaseHelper.h" />
+    <ClInclude Include="dmbasehelper.h" />
+    <ClInclude Include="dmbasescene.h" />
     <ClInclude Include="dmobject.h" />
     <ClInclude Include="dmglobal.h" />
     <ClInclude Include="dmrenderworker.h" />
+    <ClInclude Include="dmresourcemanager.h" />
+    <ClInclude Include="dmscenemanager.h" />
     <ClInclude Include="dmsingleton.h" />
     <ClInclude Include="dmsystemconfiguration.h" />
     <ClInclude Include="globalmacro.h" />
@@ -144,10 +147,13 @@
       </PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="dmapplication.cpp" />
-    <ClCompile Include="DMBaseHelper.cpp" />
+    <ClCompile Include="dmbasehelper.cpp" />
+    <ClCompile Include="dmbasescene.cpp" />
     <ClCompile Include="dmglobal.cpp" />
     <ClCompile Include="dmobject.cpp" />
     <ClCompile Include="dmrenderworker.cpp" />
+    <ClCompile Include="dmresourcemanager.cpp" />
+    <ClCompile Include="dmscenemanager.cpp" />
     <ClCompile Include="dmsystemconfiguration.cpp" />
     <ClCompile Include="module\hge\src\core\demo.cpp" />
     <ClCompile Include="module\hge\src\core\graphics.cpp" />

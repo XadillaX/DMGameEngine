@@ -8,6 +8,7 @@
 #include "dmapplication.h"
 #include "module\hge\include\hge.h"
 #include "dmrenderworker.h"
+#include "dmscenemanager.h"
 
 HGE* _innerHGE = NULL;
 
@@ -15,10 +16,17 @@ DMSINGLETON_IMPL(DMApplication);
 
 void DMApplication::InitializeEnviroment()
 {
+    // HGE
     _innerHGE = hgeCreate(HGE_VERSION);
 
+    // BaseHelper
     m_pBaseHelper = &(DMGlobal::g_HGEHelper);
+
+    // System configuration object
     m_pSystemConfiguration = new DMSystemConfiguration();
+
+    // Scene manager
+    DMSCENE.Initialize();
 
     _innerHGE->System_SetState(HGE_FRAMEFUNC, _DMRenderWorker::_DMRenderUpdate);
     _innerHGE->System_SetState(HGE_RENDERFUNC, _DMRenderWorker::_DMRenderRender);

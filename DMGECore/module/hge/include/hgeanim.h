@@ -25,7 +25,7 @@
 /*
 ** HGE Animation class
 */
-class hgeAnimation : public hgeSprite
+class EXPORT hgeAnimation : public hgeSprite
 {
 public:
 	hgeAnimation(HTEXTURE tex, int nframes, float FPS, float x, float y, float w, float h);

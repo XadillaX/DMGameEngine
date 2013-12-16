@@ -18,7 +18,7 @@
 /*
 ** HGE Sprite class
 */
-class hgeSprite
+class EXPORT hgeSprite
 {
 public:
 	hgeSprite(HTEXTURE tex, float x, float y, float w, float h);

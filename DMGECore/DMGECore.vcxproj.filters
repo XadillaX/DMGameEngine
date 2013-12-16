@@ -25,6 +25,15 @@
     <Filter Include="Worker">
       <UniqueIdentifier>{158a22d1-7fe3-4daf-9065-91663592cffe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{d7155b2c-c980-42cf-94cc-3f8698ecfbd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\Resource">
+      <UniqueIdentifier>{bf8bd175-f1a3-45ce-8747-1e99c0b0abb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\Scene">
+      <UniqueIdentifier>{57e0024c-7398-4854-bb21-9ec250255c78}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -147,6 +156,15 @@
     </ClInclude>
     <ClInclude Include="dmrenderworker.h">
       <Filter>Worker</Filter>
+    </ClInclude>
+    <ClInclude Include="dmresourcemanager.h">
+      <Filter>Manager\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="dmscenemanager.h">
+      <Filter>Manager\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="dmbasescene.h">
+      <Filter>Manager\Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -273,6 +291,15 @@
     <ClCompile Include="dmapplication.cpp" />
     <ClCompile Include="dmrenderworker.cpp">
       <Filter>Worker</Filter>
+    </ClCompile>
+    <ClCompile Include="dmresourcemanager.cpp">
+      <Filter>Manager\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="dmscenemanager.cpp">
+      <Filter>Manager\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="dmbasescene.cpp">
+      <Filter>Manager\Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -27,7 +27,7 @@ struct NamedString
 /*
 ** HGE String table class
 */
-class hgeStringTable
+class EXPORT hgeStringTable
 {
 public:
 	hgeStringTable(const char *filename);

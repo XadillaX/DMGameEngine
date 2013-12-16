@@ -16,10 +16,10 @@
 
 #define hgeColor hgeColorRGB
 
-inline void ColorClamp(float &x) { if(x<0.0f) x=0.0f; if(x>1.0f) x=1.0f; }
+inline void EXPORT ColorClamp(float &x) { if(x<0.0f) x=0.0f; if(x>1.0f) x=1.0f; }
 
 
-class hgeColorRGB
+class EXPORT hgeColorRGB
 {
 public:
 	float		r,g,b,a;
@@ -45,10 +45,10 @@ public:
 	DWORD			GetHWColor() const { return (DWORD(a*255.0f)<<24) + (DWORD(r*255.0f)<<16) + (DWORD(g*255.0f)<<8) + DWORD(b*255.0f);	}
 };
 
-inline hgeColorRGB operator* (const float sc, const hgeColorRGB &c) { return c*sc; }
+inline EXPORT hgeColorRGB operator* (const float sc, const hgeColorRGB &c) { return c*sc; }
 
 
-class hgeColorHSV
+class EXPORT hgeColorHSV
 {
 public:
 	float		h,s,v,a;
@@ -74,7 +74,7 @@ public:
 	DWORD			GetHWColor() const;
 };
 
-inline hgeColorHSV operator* (const float sc, const hgeColorHSV &c) { return c*sc; }
+inline EXPORT hgeColorHSV operator* (const float sc, const hgeColorHSV &c) { return c*sc; }
 
 
 #endif

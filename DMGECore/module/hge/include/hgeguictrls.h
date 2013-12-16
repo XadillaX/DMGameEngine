@@ -29,7 +29,7 @@
 /*
 ** hgeGUIText
 */
-class hgeGUIText : public hgeGUIObject
+class EXPORT hgeGUIText : public hgeGUIObject
 {
 public:
 	hgeGUIText(int id, float x, float y, float w, float h, hgeFont *fnt);
@@ -51,7 +51,7 @@ private:
 /*
 ** hgeGUIButton
 */
-class hgeGUIButton : public hgeGUIObject
+class EXPORT hgeGUIButton : public hgeGUIObject
 {
 public:
 	hgeGUIButton(int id, float x, float y, float w, float h, HTEXTURE tex, float tx, float ty);
@@ -79,7 +79,7 @@ private:
 #define HGESLIDER_BARRELATIVE	1
 #define HGESLIDER_SLIDER		2
 
-class hgeGUISlider : public hgeGUIObject
+class EXPORT hgeGUISlider : public hgeGUIObject
 {
 public:
 	hgeGUISlider(int id, float x, float y, float w, float h, HTEXTURE tex, float tx, float ty, float sw, float sh, bool vertical=false);
@@ -112,7 +112,7 @@ struct hgeGUIListboxItem
 	hgeGUIListboxItem	*next;
 };
 
-class hgeGUIListbox : public hgeGUIObject
+class EXPORT hgeGUIListbox : public hgeGUIObject
 {
 public:
 	hgeGUIListbox(int id, float x, float y, float w, float h, hgeFont *fnt, DWORD tColor, DWORD thColor, DWORD hColor);

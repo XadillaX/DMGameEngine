@@ -20,7 +20,7 @@
 */
 float InvSqrt(float x);
 
-class hgeVector
+class EXPORT hgeVector
 {
 public:
 	float	x,y;
@@ -49,9 +49,9 @@ public:
 	hgeVector*	Rotate(float a);
 };
 
-inline hgeVector operator* (const float s, const hgeVector &v)		{ return v*s; }
-inline float	 operator^ (const hgeVector &v, const hgeVector &u) { return v.Angle(&u); }
-inline float	 operator% (const hgeVector &v, const hgeVector &u) { return v.Dot(&u); }
+inline hgeVector EXPORT operator* (const float s, const hgeVector &v)		{ return v*s; }
+inline float	 EXPORT operator^ (const hgeVector &v, const hgeVector &u) { return v.Angle(&u); }
+inline float	 EXPORT operator% (const hgeVector &v, const hgeVector &u) { return v.Dot(&u); }
 
 
 #endif
