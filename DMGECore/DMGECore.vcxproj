@@ -95,6 +95,7 @@
     <ClInclude Include="dmapplication.h" />
     <ClInclude Include="dmbasehelper.h" />
     <ClInclude Include="dmbasescene.h" />
+    <ClInclude Include="dmimageresourcemanager.h" />
     <ClInclude Include="dmobject.h" />
     <ClInclude Include="dmglobal.h" />
     <ClInclude Include="dmrenderworker.h" />
@@ -150,6 +151,7 @@
     <ClCompile Include="dmbasehelper.cpp" />
     <ClCompile Include="dmbasescene.cpp" />
     <ClCompile Include="dmglobal.cpp" />
+    <ClCompile Include="dmimageresourcemanager.cpp" />
     <ClCompile Include="dmobject.cpp" />
     <ClCompile Include="dmrenderworker.cpp" />
     <ClCompile Include="dmresourcemanager.cpp" />

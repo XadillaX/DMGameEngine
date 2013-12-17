@@ -1,5 +1,5 @@
 #include <dmapplication.h>
-#include <dmresourcemanager.h>
+#include <dmimageresourcemanager.h>
 #include <module\hge\include\hge.h>
 #include <module\hge\include\hgesprite.h>
 
@@ -8,19 +8,14 @@ DMResourceManager rscMgr;
 class TestScene : public DMBaseScene
 {
 private:
-    DMResourceBuffer* buff;
     hgeSprite* spr;
-    HTEXTURE hTex;
-    HGE* hge;
+    DMImageResource* pIR;
 
 public:
     virtual bool Initialize()
     {
-        hge = hgeCreate(HGE_VERSION);
-        buff = rscMgr.GetResource("../Assets/test.jpg");
-
-        hTex = hge->Texture_Load((char*)buff->m_pBuff, buff->m_dwBuffSize, true);
-        spr = new hgeSprite((HTEXTURE)hTex, 0, 0, 3402, 1400);
+        pIR = DMImageResourceManager::Instance().GetImage("../Assets/test.jpg");
+        spr = new hgeSprite(pIR->ID(), 0, 0, 3402, 1400);
 
         return true;
     }
@@ -28,8 +23,7 @@ public:
     virtual void Destroy()
     {
         SAFEDEL(spr);
-        hTex = 0;
-        hge->Release();
+        DMImageResourceManager::Instance().RemoveImage(pIR);
     }
 
     virtual bool Render(float fDeltaTime)
@@ -59,6 +53,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
     DMAPP.Start();
 
     DMAPP.Shutdown();
+    DMSCENE.ClearScenes();
 
     return 0;
 }

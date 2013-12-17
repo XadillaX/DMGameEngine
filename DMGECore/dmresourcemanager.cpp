@@ -8,7 +8,7 @@
 #include "module\hge\include\hge.h"
 #include "dmresourcemanager.h"
 
-DMResourceBuffer* _defaultResourceGetter(char* szName)
+DMResourceBuffer* _defaultResourceGetter(const char* szName)
 {
     DMResourceBuffer* buff = new DMResourceBuffer();
 
@@ -42,7 +42,7 @@ void DMResourceManager::ClearCache()
     m_mpCache.clear();
 }
 
-DMResourceBuffer* DMResourceManager::GetResource(char* szName)
+DMResourceBuffer* DMResourceManager::GetResource(const char* szName)
 {
     /**
      * Step 1.
@@ -67,7 +67,7 @@ DMResourceBuffer* DMResourceManager::GetResource(char* szName)
     return buff;
 }
 
-void DMResourceManager::RemoveResource(char* szName)
+void DMResourceManager::RemoveResource(const char* szName)
 {
     DMResourceMap::iterator it = m_mpCache.find(szName);
     if(it != m_mpCache.end())

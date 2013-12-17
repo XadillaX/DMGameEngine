@@ -20,7 +20,7 @@ struct DMResourceBuffer
     void*           m_pBuff;
 };
 typedef map<string, DMResourceBuffer*> DMResourceMap;
-typedef DMResourceBuffer* (DMResourceGetterCallback)(char* szName);
+typedef DMResourceBuffer* (DMResourceGetterCallback)(const char* szName);
 
 class DMGECORE_API DMResourceManager : public DMObject
 {
@@ -28,10 +28,10 @@ public:
     DMResourceManager(void);
     virtual ~DMResourceManager(void);
 
-    void                                ClearCache();
+    virtual void                        ClearCache();
 
-    DMResourceBuffer*                   GetResource(char* szName);
-    void                                RemoveResource(char* szName);
+    DMResourceBuffer*                   GetResource(const char* szName);
+    void                                RemoveResource(const char* szName);
 
 protected:
     DMBaseHelper*                       m_pHelper;

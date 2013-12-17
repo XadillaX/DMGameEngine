@@ -166,6 +166,9 @@
     <ClInclude Include="dmbasescene.h">
       <Filter>Manager\Scene</Filter>
     </ClInclude>
+    <ClInclude Include="dmimageresourcemanager.h">
+      <Filter>Manager\Resource</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -300,6 +303,9 @@
     </ClCompile>
     <ClCompile Include="dmbasescene.cpp">
       <Filter>Manager\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="dmimageresourcemanager.cpp">
+      <Filter>Manager\Resource</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
