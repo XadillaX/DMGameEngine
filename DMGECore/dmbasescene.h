@@ -9,6 +9,7 @@
 #define __DMBASESCENE_H__
 #pragma once
 #include "dmobject.h"
+#include "dmrenderhelper.h"
 
 class DMGECORE_API DMBaseScene : public DMObject
 {
@@ -23,6 +24,7 @@ public:
     virtual bool                Render(float fDeltaTime);
 
 protected:
+    DMRenderHelper*             m_pRender;
     DMBaseHelper*               m_pHelper;
     char                        m_szSceneName;
 };

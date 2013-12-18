@@ -14,6 +14,49 @@ DMImageResource::DMImageResource(ImageID id, string name, bool org, DMResourceBu
     m_szName = name;
     m_bOriginal = org;
     m_pBuffer = buff;
+
+    m_pPixel = NULL;
+}
+
+int DMImageResource::Width()
+{
+    return DMGlobal::g_HGEHelper.GetObj()->Texture_GetWidth(m_dwID, true);
+}
+
+int DMImageResource::Height()
+{
+    return DMGlobal::g_HGEHelper.GetObj()->Texture_GetHeight(m_dwID, true);
+}
+
+SIZE DMImageResource::Size()
+{
+    SIZE sz;
+    sz.cx = Width();
+    sz.cy = Height();
+
+    return sz;
+}
+
+DMPixArray DMImageResource::GetPixel(bool bReadOnly, int left, int top, int width, int height)
+{
+    if(m_pPixel) return NULL;
+
+    HGE* pHGE = DMGlobal::g_HGEHelper.GetObj();
+    m_pPixel = pHGE->Texture_Lock(m_dwID, bReadOnly, left, top, width, height);
+
+    return m_pPixel;
+}
+
+bool DMImageResource::UnlockPixel()
+{
+    if(!m_pPixel) return false;
+
+    HGE* pHGE = DMGlobal::g_HGEHelper.GetObj();
+
+    pHGE->Texture_Unlock(m_dwID);
+    m_pPixel = NULL;
+
+    return true;
 }
 
 DMImageResource::~DMImageResource()
@@ -47,9 +90,10 @@ DMImageResource* DMImageResourceManager::GetImage(const char* szName)
     /**
      * TODO: the 3rd param (true or false).
      */
-    ImageID id = m_pHelper->GetObj()->Texture_Load((char*)buff->m_pBuff, buff->m_dwBuffSize);
+    ImageID id = m_pHelper->GetObj()->Texture_Load((char*)buff->m_pBuff, buff->m_dwBuffSize, true);
     if(!id)
     {
+        RemoveResource(szName);
         return NULL;
     }
 
@@ -76,7 +120,16 @@ DMImageResource* DMImageResourceManager::CloneImage(DMImageResource* pImageManag
     buff->m_pBuff = new char[buff->m_dwBuffSize];
     memcpy(buff->m_pBuff, pImageManagedByManager->Buffer()->m_pBuff, buff->m_dwBuffSize * sizeof(char));
 
-    DMImageResource* pIR = new DMImageResource(pImageManagedByManager->ID(), pImageManagedByManager->Name(), false, buff);
+    ImageID id = m_pHelper->GetObj()->Texture_Load((char*)buff->m_pBuff, buff->m_dwBuffSize, true);
+    if(!id)
+    {
+        SAFEDEL_ARRAY(buff->m_pBuff);
+        SAFEDEL(buff);
+
+        return NULL;
+    }
+
+    DMImageResource* pIR = new DMImageResource(id, pImageManagedByManager->Name(), false, buff);
 
     it->second.push_back(pIR);
 

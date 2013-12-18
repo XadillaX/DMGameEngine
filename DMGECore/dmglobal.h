@@ -9,8 +9,14 @@
 #define __DMGLOBAL_H__
 #pragma once
 #include <windows.h>
+#include "module\hge\include\hgecolor.h"
 #include "globalmacro.h"
 #include "dmbasehelper.h"
+
+typedef DWORD DMBlend;
+typedef hgeVertex DMVertex;
+typedef hgeColor DMColorObject;
+typedef DWORD DMColor;
 
 namespace DMGlobal
 {

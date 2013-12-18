@@ -20,6 +20,7 @@ public:
     void                        SetIcon(char* pMAKEINTRESOURCE);
     void                        SetTitle(char* szTitle);
     void                        SetFullScreen(bool bFullScreen = true);
+    void                        SetShowMouse(bool bShow = true);
 
     void                        SetIniFile(char* szIniFile);
     void                        SetLogFile(char* szLogFile);

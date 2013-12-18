@@ -8,8 +8,10 @@
 #include "dmbasescene.h"
 
 DMBaseScene::DMBaseScene(void) :
-    m_pHelper(&DMGlobal::g_HGEHelper)
+    m_pHelper(&DMGlobal::g_HGEHelper),
+    m_pRender(NULL)
 {
+    m_pRender = new DMRenderHelper();
 }
 
 DMBaseScene::~DMBaseScene(void)

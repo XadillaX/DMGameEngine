@@ -50,6 +50,11 @@ void DMSystemConfiguration::SetFullScreen(bool bFullScreen)
     m_pHelper->GetObj()->System_SetState(HGE_WINDOWED, !bFullScreen);
 }
 
+void DMSystemConfiguration::SetShowMouse(bool bShow)
+{
+    m_pHelper->GetObj()->System_SetState(HGE_HIDEMOUSE, !bShow);
+}
+
 void DMSystemConfiguration::SetScreenSize(int nWidth, int nHeight, int nBPP)
 {
     SetScreenWidth(nWidth);

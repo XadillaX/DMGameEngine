@@ -34,6 +34,15 @@
     <Filter Include="Manager\Scene">
       <UniqueIdentifier>{57e0024c-7398-4854-bb21-9ec250255c78}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{1c6741c0-0dcb-4ad1-80b8-7cd44497c2b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helper\Render">
+      <UniqueIdentifier>{80c2b192-fb78-49ec-8150-5671e001882c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helper\Input">
+      <UniqueIdentifier>{f4582814-0a71-4c44-9925-ed12cbd20b07}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -168,6 +177,9 @@
     </ClInclude>
     <ClInclude Include="dmimageresourcemanager.h">
       <Filter>Manager\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="dmrenderhelper.h">
+      <Filter>Helper\Render</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -306,6 +318,9 @@
     </ClCompile>
     <ClCompile Include="dmimageresourcemanager.cpp">
       <Filter>Manager\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="dmrenderhelper.cpp">
+      <Filter>Helper\Render</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

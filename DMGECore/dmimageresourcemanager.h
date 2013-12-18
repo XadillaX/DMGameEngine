@@ -10,6 +10,7 @@
 #pragma once
 #include "dmsingleton.h"
 #include <map>
+#include <set>
 #include <string>
 #include <deque>
 #include "dmresourcemanager.h"
@@ -17,6 +18,7 @@ using namespace std;
 
 class DMImageResourceManager;
 typedef DWORD ImageID;
+typedef DWORD* DMPixArray;
 class DMGECORE_API DMImageResource
 {
 public:
@@ -26,6 +28,13 @@ public:
     string              Name() { return m_szName; }
     bool                IsOriginal() { return m_bOriginal; }
     DMResourceBuffer*   Buffer() { return m_pBuffer; }
+
+    int                 Width();
+    int                 Height();
+    SIZE                Size();
+
+    DMPixArray          GetPixel(bool bReadOnly = false, int left = 0, int top = 0, int width = 0, int height = 0);
+    bool                UnlockPixel();
 
 protected:
     ~DMImageResource();
@@ -51,6 +60,8 @@ private:
      */
     DMResourceBuffer*   m_pBuffer;
 
+    DMPixArray          m_pPixel;
+
     friend class DMImageResourceManager;
 };
 
@@ -72,5 +83,7 @@ public:
 protected:
     map<string, ImageResourceSet>               m_mpImageCache;
 };
+
+#define DMIMGMANAGER DMImageResourceManager::Instance()
 
 #endif
